@@ -1,0 +1,12 @@
+/* css styles */
+
+h1 {
+    font-size: 50px!important;
+    color: #1C5253!important;
+}
+
+img.centering {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }

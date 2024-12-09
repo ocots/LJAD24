@@ -1,0 +1,129 @@
+---
+title: "Sur les problèmes de Zermelo 2D du point de vue du contrôle optimal"
+author: "Olivier Cots"
+subtitle: "Séminaire Analyse et Dynamique, Laboratoire Jean Alexandre Dieudonné, Université Côte d'Azur"
+date: "2024-10-12"
+format:
+  revealjs:
+    css: assets/css/styles.css
+    smaller: true
+    scrollable: true
+    slide-number: true
+    preview-links: auto
+    progress: true
+    history: true
+    controls: true
+    theme: [default, assets/css/custom.scss]
+    html-math-method: mathjax
+filters:
+  - reveal-header
+---
+
+# Notations utiles
+
+- Dynamique contrôlée : $\dot{q} = F_0(q) + u_1 F_1(q) + u_2 F_2(q) \in \mathbb{R}^2$, $\quad \lVert u \rVert \leq 1$,
+- Pseudo-hamiltonien : $H(q,p,u) = \langle p, F_0(q) + u_1 F_1(q) + u_2 F_2(q) \rangle$,
+- Relèvements hamiltoniens : $H_i(q,p) = \langle p, F_i(q) \rangle$,
+- Contrôle optimal : 
+$$
+  u^*(q,p) = \frac{1}{\lvert p \rvert} (H_1(q,p), H_2(q,p)),
+$$
+où $\lvert p \rvert = \lVert (H_1(q,p), H_2(q,p)) \rVert$,
+- Hamiltonien maximisé : $H^*(q,p) = \max_{\lvert u \rvert \leq 1} H(q,p,u) = H_0(q,p) + \lvert p \rvert$.
+- Puisque le temps final est libre, on a $H^*(q,p) = -p^0 \ge 0$.
+
+# Exemple historique : référence
+
+:::{.column-page}
+<a href="https://hal.science/hal-03209491">
+  <img class="centering" width="70%"  src="assets/images/historique-ref.png"/>
+</a>
+:::
+
+# Exemple historique : paramétrisation
+
+:::{.column-page}
+  <img class="centering" width="80%"  src="assets/images/historique-param.png"/>
+:::
+
+# Exemple historique : trajectoires
+
+:::{.column-page}
+  <img class="centering" width="80%"  src="assets/images/historique-traj.png"/>
+:::
+
+# Problème vortex : référence
+
+:::{.column-page}
+<a href="https://hal.science/hal-02296046">
+  <img class="centering" width="70%"  src="assets/images/vortex-ref.png"/>
+</a>
+:::
+
+# Problème vortex : composantes de Reeb 1/3
+
+:::{.column-page}
+  <img class="centering" width="80%"  src="assets/images/vortex-reeb-1s3.png"/>
+  <img class="centering" width="80%"  src="assets/images/vortex-eq.png"/>
+:::
+
+# Problème vortex : composantes de Reeb 2/3
+
+:::{.column-page}
+  <img class="centering" width="80%"  src="assets/images/vortex-reeb-2s3.png"/>
+:::
+
+# Problème vortex : composantes de Reeb 3/3
+
+:::{.column-page}
+  <img class="centering" width="80%"  src="assets/images/vortex-reeb-3s3.png"/>
+:::
+
+# Problème en micromagnétisme : référence
+
+:::{.column-page}
+<img class="centering" width="60%"  src="assets/images/micromagnetism-ref.png"/>
+:::
+
+# Problème en micromagnétisme : exemple dans le cas Finsler
+
+:::{.column-page}
+  <img class="centering" width="60%"  src="assets/images/micromagnetism-finsler.png"/>
+:::
+
+# Problème en micromagnétisme : lieu de transition
+
+:::{.column-page}
+  <img class="centering" width="60%"  src="assets/images/micromagnetism-current.png"/>
+:::
+
+:::{.column-page}
+  <img class="centering" width="70%"  src="assets/images/micromagnetism-transition-set.png"/>
+:::
+
+# Problème de Kepler moyenné : référence
+
+:::{.column-page}
+<a href="https://hal.science/hal-04433828">
+  <img class="centering" width="60%"  src="assets/images/avg-kepler-ref.png"/>
+</a>
+<img class="centering" width="80%"  src="assets/images/avg-kepler-eq.png"/>
+:::
+
+# Problème de Kepler moyenné : synthèse
+
+:::{.column-page}
+  <img class="centering" width="100%"  src="assets/images/avg-kepler-synthesis.png"/>
+:::
+
+# Problème de Kepler moyenné : trajectoires
+
+:::{.column-page}
+  <img class="centering" width="100%"  src="assets/images/avg-kepler-traj.png"/>
+:::
+
+# Problème de Kepler moyenné : sphères 
+
+:::{.column-page}
+  <img class="centering" width="100%"  src="assets/images/avg-kepler-spheres.png"/>
+:::

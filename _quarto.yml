@@ -1,0 +1,21 @@
+project:
+  type: website
+
+execute:
+  freeze: auto
+
+website:
+  title: "pres"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme: cosmo
+    css: assets/css/styles.css
+    toc: true
+
+
+
