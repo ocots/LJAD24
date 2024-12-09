@@ -14,7 +14,7 @@
 
   <meta name="author" content="Olivier Cots">
   <meta name="dcterms.date" content="2024-10-12">
-  <title>pres – Sur les problèmes de Zermelo 2D du point de vue du contrôle optimal</title>
+  <title>Zermelo 2D – Sur les problèmes de Zermelo 2D du point de vue du contrôle optimal</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -578,7 +578,7 @@ u^*(q,p) = \frac{1}{\lvert p \rvert} (H_1(q,p), H_2(q,p)),
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
+          var filterRegex = new RegExp("https:\/\/ocots\.github\.io\/LJAD24\/");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
